@@ -1,0 +1,1 @@
+wget --no-check-certificate -qO - https://raw.githubusercontent.com/racaljk/hosts/master/hosts | awk '$1 ~ /^[0-9]/ {printf("address=/%s/%s\n", $2,$1)}' > /etc/dnsmasq.d/dnsmasq.fq
