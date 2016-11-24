@@ -5,3 +5,10 @@ OpenWrt相关或者Linux脚本
 
 重启DNSmasq服务命令：
 /etc/init.d/dnsmasq restart
+
+mkdir /etc/dnsmasq.d
+//新建一个dnsmasq.d的目录
+//这里边存放dns规则
+ 
+echo "conf-dir=/etc/dnsmasq.d" >> /etc/dnsmasq.conf
+//使dnsmasq.d目录内的规则生效
